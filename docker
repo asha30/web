@@ -1,0 +1,180 @@
+docker cli command:
+
+docker --version
+docker pull hello-world
+wsl --list --verbose
+docker images
+docker run hello-world
+docker ps
+docker ps -a
+docker rm <container_id>
+docker rmi hello-world
+
+
+DOCKER CLI COMMANDS WITH REDIS:
+
+docker pull redis
+docker run --name my-redis -d redis
+docker ps
+docker exec -it my-redis redis-cli
+  SET name "ooy"
+  ok
+  GET name
+docker stop my-redis
+docker start my-redis
+docker rm my-redis
+docker rmi redis
+
+CREATING DOCKER FILE:
+create a file called Dockerfile by giving command (echo. >dockerfile)
+
+  DOCKER COMMANDS STEP-BY-STEP in git bash
+1.	docker build -t redisnew
+  2.	docker run --name myredisnew -d redisnew
+  3.	docker ps
+  4.	docker stop myredisnew
+  5.	docker login
+  6.	docker ps -a
+  7.	docker commit <redisnew> asha30/redis1
+8.	docker image
+  9.	docker push asha30/redis1
+  10.	docker rm 49ad5e383050
+  11.	docker rmi asha30/redis1
+  12.	docker ps -a
+  13.	docker logout
+  14.	docker pull asha30/redis1
+  15.	docker run --name myredis -d asha30/redis1
+  16.	docker exec -it myredis redis-cli
+  17.	SET name "asdfg"
+  18.	GET name
+  19.	Exit
+  20.	docker ps -a
+  21.	docker stop myredis
+  22.	docker rm 1bc8159442c6
+  23.	docker images
+  24.	docker rmi asha30/redis1
+  25.	docker logout
+
+  
+MODIFY AND PUSH DOCKER IMAGE:
+  docker pull ubuntu
+  docker run -it --name newubuntu -d ubuntu
+  docker ps
+  docker exec -it c304daf241 bash
+  apt update
+  apt install git -y
+	git --version
+  exit
+  docker stop c3c04dadf241
+  docker commit c3c04dadf241 asha30/newubuntu2024
+  docker images
+  docker login
+  docker push asha30/newubuntu2024
+  docker logout
+  docker rm c3c04dadf241
+  docker rmi asha30/newubuntu2024
+  docker pull asha30/newubuntu2024
+  docker run --name newubuntu2024 -it asha30/newubuntu2024
+  git --version
+   exit
+  docker ps -a
+  docker rm be1f052d2adc
+  Docker rmi asha30/newubuntu2024
+
+  //CREATE AND PUSH DOCKER FILE IMAGE
+  1.	Create the JavaScript File
+  Create a Dockerfile
+  docker build -t simple-calculator
+    docker run simple-calculator
+  docker login
+  docker tag simple-calculator ash30/simplecalculator
+  docker push asha30/simplecalculator
+  docker ps -a
+  docker rm 020bcf81e084
+  docker rmi asha30/simplecalculator
+  docker pull your-dockerhub-username/simple-calculator
+  Run the Pulled Image
+  docker ps -a
+  Docker images
+  Docker rmi b1d9df8ab815
+  Docker logout
+
+  
+RUNNING MULTIPLE CONTAINERS USING DOCKER COMPOSE
+docker-compose up -d
+  
+(volumes:
+  db_data: # Persistent storage for MySQL data
+version: '3.8'
+services:
+  tomcat:
+    image: tomee
+    container_name: tomcat_server
+    ports:
+      - "8087:8080"
+  nginx:
+    image: nginx:latest
+    container_name: nginx_server
+    ports:
+      - "85:80")
+  
+docker-compose stop
+docker-compose start
+docker-compose down
+  
+  
+
+DEPLOYING AND SCALING APPLICATIONS USING MINIKUBE
+  
+1.Minikube start
+2.Create and manage the Nginx Deployment
+  kubectl create deployment mynginx --image=nginx
+  kubectl get deployments
+  kubectl expose deployment mynginx --type=NodePort --port=80
+  kubectl scale deployment mynginx --replicas=4
+  kubectl port-forward svc/mynginx 8081:80
+  kubectl delete deployment mynginx
+  kubectl delete service mynginx
+  minikube stop
+  minikube delete
+
+  DEPLOYING AND MANAGING MONITORING SYSTEMS USING NAGIOS IN DOCKER
+  docker pull jasonrivers/nagios:latest
+  docker run --name nagiosdemo -p 8888:80 jasonrivers/nagios:latest
+stopping nagios:
+  docker ps -a
+  docker stop nagiosdemo
+  docker rm nagiosdemo
+    docker images
+    docker rmi jasonrivers/nagios:latest
+      
+  
+
+
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+  
+  
+  
+  
+  
+  
+
+
+
+  
+  
+  
+
+  
