@@ -1,0 +1,136 @@
+1. Book Bank//
+Scope
+The Book Bank is a system to manage the inventory of books in libraries or similar settings.
+It helps users borrow and return books while allowing administrators to keep track of books.
+Users can check book availability and register online to borrow or return books.
+Functional Requirements
+Admin Features:
+
+Add new books: Admin can register new books in the system.
+Update details: Admin can update book information (e.g., author, title, availability).
+Remove old or lost books: Admin can delete records of books that are no longer available.
+User Features:
+
+Search for books: Users can search for books by title, author, or genre.
+Borrow requests: Users can request to borrow books online.
+Notifications: The system sends reminders for return dates and alerts for penalties if the books are overdue.
+Non-Functional Requirements
+User-Friendly Interface: The platform should be easy to navigate for both users and administrators.
+Secure Data Access: The records of books and users must be protected to avoid unauthorized changes.
+Scalability: It should support operations for multiple branches or locations of the library.
+
+
+2. Online Course Reservation System//
+Scope
+This system simplifies the process of enrolling in courses offered by colleges, schools, or training institutions.
+Users can view available courses, track seat availability, and book their seats online.
+Payment and enrollment confirmation are automated.
+Functional Requirements
+User Features:
+
+Create an account: Users can register and log in to manage their enrollments.
+Course search: Users can search for courses based on their interests or needs.
+Real-time booking: Seats are reserved instantly after booking.
+Admin Features:
+
+Manage courses: Admin can add, update, or delete course information.
+Monitor seat availability: Admin can track how many seats are booked or left.
+Payments:
+
+Users can pay fees online using various payment methods (cards, wallets, etc.).
+Receipts and booking confirmations are generated automatically.
+Non-Functional Requirements
+High Traffic Support: The system must handle many users during busy periods like enrollment deadlines.
+Data Security: Personal details and payment information should be encrypted to prevent theft.
+Accessibility: The platform should be available on both computers and mobile devices.
+
+
+3. E-Ticketing System//
+Scope
+This system enables users to buy tickets for events, travel, or movies online.
+It streamlines booking, cancellation, and ticket generation processes.
+Functional Requirements
+Booking:
+
+Check availability: Users can see how many tickets are left for a particular event or time.
+Real-time booking: Tickets are reserved instantly upon confirmation.
+User Management:
+
+Login/Signup: Users can create accounts for personalized services.
+Manage bookings: Users can view, modify, or cancel their bookings.
+Tickets:
+
+Tickets are generated with QR codes for easy scanning and verification.
+Non-Functional Requirements
+High Availability: The platform should be operational at all times with minimal downtime.
+Reliable Transactions: Payments must be processed without errors or delays.
+Mobile Responsiveness: The interface should work well on smartphones for convenience.
+
+
+4. Recruitment System//
+Scope
+This system connects employers and job seekers, making it easier to apply for jobs and manage candidates.
+Automates tasks like job posting, resume shortlisting, and interview scheduling.
+Functional Requirements
+Employer Features:
+
+Post jobs: Employers can add job openings with descriptions and requirements.
+Candidate management: View applications, shortlist resumes, and track interview progress.
+Job Seeker Features:
+
+Apply for jobs: Users can search and apply for suitable positions.
+Upload resumes: Resumes are stored and parsed automatically for keyword matching.
+Interviews:
+
+Schedule interviews: Employers can send interview invites and manage schedules.
+Status updates: Both employers and candidates can track application progress.
+Non-Functional Requirements
+Scalability: The system should handle large numbers of users and job postings.
+Data Security: Protect sensitive information like resumes and company details.
+Integration: It should work with other HR tools like LinkedIn or payroll systems.
+
+
+5. Hospital Management System//
+Scope
+A system to manage hospital operations such as patient data, appointments, billing, and staff records.
+Helps improve efficiency and reduce manual paperwork.
+Functional Requirements
+Patient Management:
+
+Register new patients and maintain their medical history.
+Schedule appointments with doctors and send reminders.
+Operations:
+
+Inventory management: Keep track of medicines and other supplies.
+Staff records: Manage employee data like schedules and salaries.
+Billing:
+
+Generate bills and invoices for treatments and procedures.
+Track payment statuses for patients.
+Non-Functional Requirements
+Accuracy: Ensure all patient records and bills are error-free.
+Security: Patient data should be protected under medical data privacy standards.
+Speed: The system must handle emergencies with quick responses.
+
+
+6. Online Banking System//
+Scope
+A platform for customers to manage their banking needs, like transferring funds, viewing statements, and applying for loans.
+Provides 24/7 access to banking services.
+Functional Requirements
+Account Management:
+
+Create accounts and manage login credentials securely.
+Update account details such as phone numbers or addresses.
+Transactions:
+
+Transfer funds to other accounts.
+Pay bills or recharge mobile services.
+Additional Features:
+
+View account balances and download statements.
+Apply for loans or credit cards online.
+Non-Functional Requirements
+Encryption: Ensure all transactions and data are securely encrypted.
+Performance: Handle high volumes of transactions without delays.
+Cross-Platform Support: Available on both web browsers and mobile apps for convenience.
