@@ -1,19 +1,21 @@
 1. Book Bank//
+
 Scope
 The Book Bank is a system to manage the inventory of books in libraries or similar settings.
 It helps users borrow and return books while allowing administrators to keep track of books.
 Users can check book availability and register online to borrow or return books.
 Functional Requirements
-Admin Features:
 
+Admin Features:
 Add new books: Admin can register new books in the system.
 Update details: Admin can update book information (e.g., author, title, availability).
 Remove old or lost books: Admin can delete records of books that are no longer available.
-User Features:
 
+User Features:
 Search for books: Users can search for books by title, author, or genre.
 Borrow requests: Users can request to borrow books online.
 Notifications: The system sends reminders for return dates and alerts for penalties if the books are overdue.
+
 Non-Functional Requirements
 User-Friendly Interface: The platform should be easy to navigate for both users and administrators.
 Secure Data Access: The records of books and users must be protected to avoid unauthorized changes.
